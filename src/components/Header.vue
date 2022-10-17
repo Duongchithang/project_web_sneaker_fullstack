@@ -18,7 +18,7 @@
         ></i>
         <div class="container-heading relative md:top-[50%] md:left-[5%] xs:left-[10%]  lg:top-[50%] lg:left-[50%] lg:translate-x-[-50%] ">
           <h1 class="heading-name xs:text-[30px] lg:text-4xl font-semibold tracking-widest">
-           CHI THANG
+           ZIN
           </h1>
           <span class="heading-title font-semibold text-base tracking-widest"
             >S N E

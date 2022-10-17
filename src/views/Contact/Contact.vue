@@ -95,6 +95,7 @@ export default {
   },
   data(){
     return{
+        Checksuccess : true,
         CheckInput :{
             InputName : '',
             InputEmail : '',
@@ -112,6 +113,9 @@ export default {
     }
   },
   methods:{
+    showAlert() {
+        this.$swal('Cảm ơn bạn đã liên lạc với chúng tôi!');
+    },
     Validate(){
         this.Error = {
             InputName : '',
@@ -122,23 +126,33 @@ export default {
         }
         if(!this.CheckInput.InputName){
             this.Error.InputName = 'Name is required'
+            this.Checksuccess = false
         }
         if(!this.CheckInput.InputEmail){
             this.Error.InputEmail = 'Email is required'
+            this.Checksuccess = false
         }
         if(!this.CheckInput.InputAddress){
             this.Error.InputAddress = 'Address is required'
+            this.Checksuccess = false
         }
         if(!this.CheckInput.InputPhoneNumber){
             this.Error.InputPhoneNumber = 'Phone number is required'
+            this.Checksuccess = false
         }
         if(!this.CheckInput.InputMessage){
             this.Error.InputMessage = 'Message is required'
+            this.Checksuccess = false
         }
-        console.log(this.Error);
+        if(this.CheckInput.InputMessage && this.CheckInput.InputEmail && this.CheckInput.InputAddress && this.CheckInput.InputName && this.CheckInput.InputPhoneNumber){
+            this.Checksuccess = true;
+        }
     },
      Save(){
         this.Validate();
+        if(this.Checksuccess){
+            this.showAlert();
+        }
      }
   },
   mounted(){

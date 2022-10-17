@@ -8,7 +8,7 @@ import News from '../views/News/News.vue'
 import Other from  '../views/Other/Other.vue'
 import Children from '../views/Children/Children.vue'
 import ProductDetail from '../views/ProductDetail/ProductDetail.vue'
-import Admin from '../views/Admin.vue'
+import Admin from '../views/admin/Admin.vue'
 const routes = [
   {
     path: '/',

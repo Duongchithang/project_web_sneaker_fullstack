@@ -7,17 +7,23 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@headlessui/vue": "^1.6.0",
     "@heroicons/vue": "^1.0.6",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
+    "bootstrap": "^5.2.1",
     "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
+    "styled-components": "^5.3.6",
     "swiper": "^8.1.4",
     "tw-elements": "^1.0.0-alpha12",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
+    "vue-sweetalert2": "^5.0.5",
     "vuelidate": "^0.7.7",
+    "vuesax": "^4.0.1-alpha.25",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
